@@ -136,8 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         starting+=50;
         
         initialize();
-        console.log(starting);
-        console.log(ending);
+        
         
     });
     
