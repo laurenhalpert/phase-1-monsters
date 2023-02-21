@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     let starting =0;
     
+    
     function initialize() {
         
         getFiftyMonsters(starting+1);
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `
             card.style.padding = "20px";
             document.querySelector("#monster-container").appendChild(card);
+            
         }
         
          
@@ -132,7 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let previousCards = document.querySelectorAll(".monster-card");
         previousCards.forEach(elem => elem.remove())
         starting+=50;
+        
         initialize();
+        console.log(starting);
+        console.log(ending);
         
     });
     
